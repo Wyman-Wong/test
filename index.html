@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="zlWzYqVpru4qR80KlRg5mE6ORX3EI9KklnN5CtG7">
-    <title>东北大学测温验证平台</title>
+    <title>东北大学验证平台</title>
     <link href="./visitor.css" rel="stylesheet">
     <style>
         @-webkit-keyframes pulse {
@@ -48,7 +48,7 @@
 			        var hour =t.getHours();
 			        var minute =t.getMinutes();
 			        var second=t.getSeconds();
-			        var showtime="时间：" + year + "-" + ((month<10)?"0":"") +month + "-" + day + " " + hour + ((minute<10)?":0":":") + minute + ((second<10)?":0":":") + second;
+			        var showtime="时间：" + year + "-" + ((month<10)?"0":"") +month + "-" +((day<10)?"0":"")+ day + " " + hour + ((minute<10)?":0":":") + minute + ((second<10)?":0":":") + second;
         			document.write(showtime);
     			</script>
                 
