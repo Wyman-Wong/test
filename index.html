@@ -71,6 +71,7 @@
             document.getElementById("stu-name").innerText = document.getElementById("name").value;
             document.getElementById("stu-number").innerText = document.getElementById("number").value;
             document.getElementById("stu-distress").innerText = document.getElementById("distress").value;
+            document.getElementById("stu-color").innerText = document.getElementById("color").value;
             document.getElementById("input-box").style.display = "none";
             document.getElementById("app").style.display = "";
         }
@@ -86,11 +87,13 @@
     <br/>
     <label>地  址：<input id="distress"></label>
     <br/>
+    <label>颜  色：<input id="color"></label>
+    <br/>
     <button onclick="setInfo()">“进入校园”</button>
 </div>
 
 <div id="app" style="display: none;">
-    <div class="card border-0 text-center" style="color: RGB(42,100,56)">
+    <div class="card border-0 text-center" style=""stu-color"">
         <div class="card-body">
             <h2 class="card-title p-2">东北大学通行验证</h2>
 
@@ -104,7 +107,7 @@
         </div>
     </div>
 
-    <ul class="list-group list-group-flush" style="background-color: RGB(42,100,56)">
+    <ul class="list-group list-group-flush" style="background-color: "stu-color"">
         <li class="list-group-item bg-transparent text-white d-flex">
             <div style="min-width: 4em; text-align-last: justify;">学工号</div>：<div id="stu-number">20170456</div>
         </li>
